@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  components: MyText
+  preparation: MyText
+  preparation_time: MyString
+  cost: MyString
+  tags: MyString
+
+two:
+  title: MyString
+  components: MyText
+  preparation: MyText
+  preparation_time: MyString
+  cost: MyString
+  tags: MyString

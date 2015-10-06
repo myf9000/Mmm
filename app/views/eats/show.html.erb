@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @eat.title %>
+</p>
+
+<p>
+  <strong>Components:</strong>
+  <%= @eat.components %>
+</p>
+
+<p>
+  <strong>Preparation:</strong>
+  <%= @eat.preparation %>
+</p>
+
+<p>
+  <strong>Preparation time:</strong>
+  <%= @eat.preparation_time %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @eat.cost %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @eat.tags %>
+</p>
+
+<%= link_to 'Edit', edit_eat_path(@eat) %> |
+<%= link_to 'Back', eats_path %>

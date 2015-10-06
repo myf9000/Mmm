@@ -1,0 +1,45 @@
+<%= form_for(@eat) do |f| %>
+  <% if @eat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@eat.errors.count, "error") %> prohibited this eat from being saved:</h2>
+
+      <ul>
+      <% @eat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="container-fluid">
+    <div class="field">
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :components %><br>
+      <%= f.text_area :components %>
+    </div>
+    <div class="field">
+      <%= f.label :preparation %><br>
+      <%= f.text_area :preparation %>
+    </div>
+    <div class="field">
+      <%= f.label :preparation_time %><br>
+      <%= f.text_field :preparation_time %>
+    </div>
+    <div class="field">
+      <%= f.label :cost %><br>
+      <%= f.text_field :cost %>
+    </div>
+    <div class="field">
+      <%= f.label :tags %><br>
+      <%= f.text_field :tags %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </div>
+<% end %>
+
+
